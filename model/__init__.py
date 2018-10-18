@@ -1,1 +1,7 @@
-# _*_ utf-8 coding: encoding _*_
+# -*- coding: utf-8 -*-
+
+'''
+Date: 17th, Oct, 2018
+Author: FishSoup
+Description:
+'''

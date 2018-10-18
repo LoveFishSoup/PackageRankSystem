@@ -1,12 +1,11 @@
-# coding:utf-8
+# -*- coding: utf-8 -*-
 
 """
-Description: 
-This function aims to find the relationship between each two 
-elements of input csv file.
-This function will return ???
-27/4/2018
-
+Date: 16th, April, 2018
+Author: FishSoup
+Description:
+This file aims to open specific csv file and extract specific data
+and classify them into different coloums.
 """
 import numpy as np
 import pandas as pd
@@ -16,7 +15,7 @@ import matplotlib as mpl
 import decimal
 
 def divide(num, den, prec):
-    a = (num*10**prec) // den
+    a = (num*10**prec) / den
     s = str(a).zfill(prec+1)
     return s[0:-prec] + "." + s[-prec:]
 
@@ -52,6 +51,7 @@ with open('E:\Code\packageRankSystem\dataFile\package_day.csv', newline='') as c
         pv = list(map(int, pv))
         uv = list(map(int, uv))
         playtime = list(map(int, playtime))
+        print(pv)
         
 pv = np.array(pv)
 uv = np.array(uv)
@@ -68,6 +68,9 @@ len_pv = len(pv)
 #len_playtime = len(playtime)
 
 
+
+
+'''
 # illustrate the result
 fig = plt.figure()
 plt.subplot(311)
@@ -89,7 +92,7 @@ plt.scatter(axis_x, norm_playtime, c='g', marker='*', s=15)
 plt.title('normalised playtime data')
 plt.axis('auto')
 plt.show()
-
+'''
 
 """
 import numpy as np

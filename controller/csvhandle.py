@@ -1,8 +1,12 @@
+# -*- coding: utf-8 -*-
+
 '''
 Date: 16th, April, 2018
 Author: FishSoup
+Description:
+This file aims to open specific csv file and extract specific data
+and classify them into different coloums
 '''
-# _*_ coding: utf-8 _*_
 
 import numpy as np
 import pandas as pd
